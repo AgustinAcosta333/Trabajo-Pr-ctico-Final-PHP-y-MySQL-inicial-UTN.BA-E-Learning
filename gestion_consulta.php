@@ -25,7 +25,10 @@ $conexion = conectarBaseDatos();
 	$nombre = $_POST['nombre'];
 	$correo = $_POST['correo'];
 	$consulta = $_POST['consulta'];
+	$mensaje = "Nombre: " . $nombre . "\nCorreo electrónico: " . $correo . "\nConsulta: " . $consulta;
 
+
+	mail("agustin1acosta090@mail.com", "Nueva consulta en la inmobiliaria", $mensaje);
 	mysqli_query($conexion, "INSERT INTO consultas VALUES (DEFAULT, '$nombre', '$correo', '$consulta')");
 
 	mysqli_close($conexion);
