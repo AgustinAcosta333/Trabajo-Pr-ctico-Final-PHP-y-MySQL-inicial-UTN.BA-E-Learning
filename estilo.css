@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
+nav{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: peachpuff;
+	border-bottom: 2px solid black;
+	h1{
+		padding: 2rem;
+		font-family: "SUSE", sans-serif;
+	}
+}
+nav a.consultas {
+    margin-left: auto;
+    padding: 2rem;
+    font-family: "SUSE", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.catalogo{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+
+	.casa{
+		font-family: "SUSE", sans-serif;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		gap: 1rem;
+		border: 2px solid black;
+		max-width: 1840px;
+		
+		.content_img{
+			img{
+				max-width: 400px;
+			}
+		}
+
+		.content{
+			gap: 1rem;
+			display: flex;
+			flex-direction: column;
+			padding: 1rem;
+
+			.titulo{
+				h1{
+					color: orange;
+				}
+			}
+		}
+
+	}
+}
+
+footer{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: gray;
+	border-top: 2px solid black;
+	text-align: center;
+	color: white;
+	flex-direction: column;
+	bottom: 0;
+	h4{
+		padding: 1rem;
+		font-family: "SUSE", sans-serif;
+	}
+	p{
+		padding: 1rem;
+		font-family: "SUSE", sans-serif;
+	}
+}
+
